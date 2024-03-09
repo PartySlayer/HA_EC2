@@ -24,3 +24,11 @@ variable "subnet_cidr_blocks" {
     type = list()
     default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
+
+variable "security_group_name" {
+  description = "Security group name"
+}
+
+variable "security_group_ingress_rules" {
+  description = "List of security group ingress rules"
+}

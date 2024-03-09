@@ -6,3 +6,5 @@ vpc_name = ""
 vpc_cidr_block = ""
 
 subnet_cidr_blocks = ""
+
+security_group_name = ""
