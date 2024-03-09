@@ -32,3 +32,16 @@ variable "security_group_name" {
 variable "security_group_ingress_rules" {
   description = "List of security group ingress rules"
 }
+
+variable "lb_name" {
+  description = "ALB name"
+}
+
+variable "tg_name" {
+  description = "Target Group name"
+}
+
+variable "tg_port" {
+  description = "Target Group port"
+  default = "80"
+}

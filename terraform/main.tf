@@ -47,3 +47,11 @@ module "security_group" {
     }
   ]
 }
+
+module "load_balancer" {
+  source = "./modules/load_balancer"
+  tg_name = var.tg_name
+  tg_port = var.tg_port
+  lb_name = var.lb_name
+  
+}

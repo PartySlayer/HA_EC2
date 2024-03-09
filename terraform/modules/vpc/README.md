@@ -1,1 +1,1 @@
-This module creates a VPC that will host our entire configuration, nothing special to see here!
+This module creates a VPC that will host our entire configuration, including an internet gateway, route tables and their association.
