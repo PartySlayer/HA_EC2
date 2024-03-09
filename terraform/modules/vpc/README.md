@@ -1,0 +1,1 @@
+This module creates a VPC that will host our entire configuration, nothing special to see here!
