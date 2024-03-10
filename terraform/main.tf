@@ -63,3 +63,8 @@ module "launch_template" {
   lt_image_id = var.lt_image_id
   lt_instance = var.lt_instance
 }
+
+module "auto_scaling" {
+  source = "./modules/auto_scaling"
+  asg_name = var.asg_name
+}

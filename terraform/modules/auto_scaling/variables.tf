@@ -4,10 +4,12 @@ variable "asg_name" {
 
 variable "asg_max" {
   description = "Auto scaling group max size"
+  default     = 5
 }
 
 variable "asg_min" {
   description = "Auto scaling group min size"
+  default     = 2
 }
 
 variable "asg_capacity" {
