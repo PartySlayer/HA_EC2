@@ -55,3 +55,11 @@ module "load_balancer" {
   lb_name = var.lb_name
   
 }
+
+module "launch_template" {
+  source = "./modules/launch_template"
+  lt_name = var.lt_name
+  lt_key_name = var.lt_key_name
+  lt_image_id = var.lt_image_id
+  lt_instance = var.lt_instance
+}
