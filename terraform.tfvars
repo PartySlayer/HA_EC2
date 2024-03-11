@@ -1,8 +1,8 @@
 # Provider
 
 aws_region = "eu-south-1"
-aws_access_key = "AKIAQY57TJSCTJTAG7BW"
-aws_secret_key = "N3gvpNFwA/aqtNQDI/53KC3fc95MrhcZtviCThbN"
+aws_access_key = REDACTED
+aws_secret_key = REDACTED
 
 # Vpc
 
