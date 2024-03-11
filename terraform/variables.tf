@@ -100,3 +100,13 @@ variable "scale_down_cooldown" {
   description = "EC2 undeploy cooldown"
   default = 300
 }
+
+variable "upscale_threshold" {
+  description = "Avarage CPU threshold in order to upscale"
+  default = "50"
+}
+
+variable "downscale_threshold" {
+  description = "Avarage CPU threshold in order to scale down"
+  default = "30"
+}
