@@ -5,12 +5,12 @@ resource "aws_autoscaling_group" "main_asg" {
   min_size                  = var.asg_min        # Default 2
   health_check_type         = "ELB"
   desired_capacity          = var.asg_capacity   # Default 2
-  target_group_arns         = [module.load_balancer.target_group_arn]
+  target_group_arns         = [var.target_group_arn]
 
-  vpc_zone_identifier       = [module.subnets.subnet_ids]
+  vpc_zone_identifier       = var.subnet_ids
   
   launch_template {
-    id      = module.launch_template.launch_template_id
+    id      = var.launch_template_id
     version = "$Latest"
   }
 }

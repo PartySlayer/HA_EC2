@@ -14,3 +14,6 @@ variable "lt_key_name" {
     description = "Key to ssh into the created EC2"
 }
 
+variable "security_group_id" {
+    description = "SG id" 
+}

@@ -2,8 +2,8 @@ resource "aws_lb" "main_alb" {
   name               = var.lb_name
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [module.security_group.security_group_id]
-  subnets            = [module.subnets.subnet_ids]
+  security_groups    = [var.security_group_id]
+  subnets            = var.subnet_ids
 }
 
 resource "aws_lb_listener" "main_lb_listener" {
@@ -22,5 +22,5 @@ resource "aws_lb_target_group" "main_tg" {
   target_type = "instance"
   port     = var.tg_port
   protocol = "HTTP"
-  vpc_id   = module.vpc.vpc_id
+  vpc_id   = var.vpc_id
 }

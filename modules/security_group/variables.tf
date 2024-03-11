@@ -1,3 +1,7 @@
+variable "vpc_id" {
+  description = "vpc id"
+}
+
 variable "security_group_name" {
   description = "Security group name"
 }

@@ -46,3 +46,15 @@ variable "downscale_threshold" {
   description = "Avarage CPU threshold in order to scale down"
   default = "30"
 }
+
+variable "launch_template_id" {
+    description = "LT id" 
+}
+
+variable "target_group_arn" {
+    description = "Load balancer arn for tg" 
+}
+
+variable "subnet_ids" {
+  description = "subnet id"
+}

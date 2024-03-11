@@ -1,6 +1,7 @@
+
 resource "aws_security_group" "main" {
   name        = var.security_group_name
-  vpc_id      = module.vpc.vpc_id
+  vpc_id      = var.vpc_id
 
   dynamic "ingress" {
     for_each = var.security_group_ingress_rules
