@@ -1,9 +1,6 @@
 # Provider
 
 aws_region = "eu-south-1"
-aws_access_key = REDACTED
-aws_secret_key = REDACTED
-
 # Vpc
 
 vpc_name = "HA_vpc"
@@ -25,8 +22,8 @@ tg_name = "HAtg"
 
 lt_name = "HA_lt"
 lt_key_name = "HA_ubuntu"
-lt_image_id = "ami-06878d265978313ca"
-lt_instance = "t2.micro"
+lt_image_id = "ami-019c1e0f36fa08c62"
+lt_instance = "t3.micro"
 
 # Auto Scaling Group
 
