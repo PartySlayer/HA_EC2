@@ -27,3 +27,13 @@ resource "aws_dynamodb_table" "statelock" {
     type = "S"
   }
 }
+
+# terraform {
+#    backend "s3" {
+#     bucket         = "tf-backend-87878787"
+#     key            = "tf/terraform.tfstate"
+#     region         = "eu-south-1"
+#     dynamodb_table = "state-lock"
+    
+#   }
+# }

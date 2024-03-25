@@ -22,6 +22,7 @@ resource "aws_autoscaling_policy" "scale_up" {
   adjustment_type        = "ChangeInCapacity"
   scaling_adjustment     = var.scale_up_adjust          # Default 1
   cooldown               = var.scale_up_cooldown        # Default 300
+  
 }
 
 resource "aws_autoscaling_policy" "scale_down" {
